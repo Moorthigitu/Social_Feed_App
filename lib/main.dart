@@ -197,8 +197,8 @@ class PostItem extends StatelessWidget {
                 Row(
                   children: [
                     IconButton(
-                      icon: Icon(Icons.thumb_up_alt_outlined, color: Colors.blue),
-                      onPressed: () async {
+                      icon: Icon(Icons.favorite, color: Colors.blue),
+                   onPressed: () async {
                         await FirebaseFirestore.instance
                             .collection('posts')
                             .doc(post.id)
